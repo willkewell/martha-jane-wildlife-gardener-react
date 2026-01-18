@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  min-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +39,20 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3 {
+  font-family: "Cormorant-Garamond";
+}
+
+nav {
+  position: fixed;
+  width: calc(100% - 12rem);
+  /* margin-right: 6rem;
+  margin-left: 6rem; */
+  margin: 0 6rem 2rem 6rem;
+  bottom: 0;
+  z-index: 1030; /* to prevent the navbar getting covered up by other content */
 }
