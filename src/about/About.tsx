@@ -32,7 +32,6 @@ const About = () => {
       >
         <Grid container size={{ xs: 12 }} sx={{ height: "100%" }}>
           <Grid size={{ xs: 4 }} sx={{ textAlign: "left" }}>
-            {/* <Stack> */}
             <Typography
               fontFamily="Cormorant Garamond"
               fontWeight={400}
