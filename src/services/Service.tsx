@@ -48,7 +48,7 @@ const Service = ({
                       fontFamily="Cormorant Garamond"
                       fontWeight={400}
                       variant={"h2"}
-                      sx={{ height: "10%" }}
+                      sx={{ height: "10%", color: "white" }}
                       marginBottom="1rem"
                     >
                       My Services
@@ -152,7 +152,10 @@ const Service = ({
               <Grid size={{ xs: 7 }}>
                 <Stack sx={{ height: "100%" }}>
                   {intro && (
-                    <Typography variant={"h3"} sx={{ height: "10%" }}>
+                    <Typography
+                      variant={"h3"}
+                      sx={{ height: "10%", color: "white" }}
+                    >
                       My Services
                     </Typography>
                   )}

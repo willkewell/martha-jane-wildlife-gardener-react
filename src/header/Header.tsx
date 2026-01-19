@@ -77,6 +77,7 @@ const Header = () => {
                   padding: "1rem",
                   textAlign: "left",
                   fontSize: "2cqw",
+                  color: "white",
                 }}
               >
                 Beautiful gardens created and cared for around the Bristol area.

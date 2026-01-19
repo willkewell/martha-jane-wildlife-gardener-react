@@ -35,6 +35,7 @@ const Gallery = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            color: "white",
           }}
         >
           <Typography fontFamily="Cormorant Garamond" variant="h1">

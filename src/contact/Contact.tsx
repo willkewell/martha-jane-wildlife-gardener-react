@@ -51,7 +51,7 @@ const Contact = () => {
         <Grid
           container
           size={{ xs: 12 }}
-          sx={{ height: "100%", textAlign: "left" }}
+          sx={{ height: "100%", textAlign: "left", color: "white" }}
         >
           <Grid size={{ xs: 6 }} sx={{ height: "100%" }}>
             <Stack>
