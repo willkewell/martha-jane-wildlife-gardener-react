@@ -50,6 +50,9 @@ const Feedback = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 padding: "2rem",
+                "@media (max-width: 1300px)": {
+                  display: "none",
+                },
               }}
             >
               <Typography
@@ -114,6 +117,9 @@ const Feedback = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 padding: "2rem",
+                "@media (max-width: 1300px)": {
+                  display: "none",
+                },
               }}
             >
               <Typography
