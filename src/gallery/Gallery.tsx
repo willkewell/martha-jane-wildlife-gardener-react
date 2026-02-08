@@ -2,33 +2,14 @@ import { Box, Typography } from "@mui/material";
 
 const Gallery = () => {
   return (
-    <Box
-      id="gallery"
-      sx={{
-        position: "relative",
-        margin: 0,
-        padding: 0,
-        minWidth: "100%",
-        height: "100vh",
-      }}
-    >
+    <Box id="gallery" className="container">
       <Box
+        className="container-background"
         sx={{
-          width: "100%",
-          height: "100%",
           bgcolor: "#0e140f",
         }}
       />
-      <Box
-        sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "calc(100% - 16rem)",
-          height: "calc(100vh - 16rem)",
-          margin: "8rem",
-        }}
-      >
+      <Box className="content-box">
         <Box
           sx={{
             height: "100%",
@@ -38,10 +19,26 @@ const Gallery = () => {
             color: "white",
           }}
         >
-          <Typography fontFamily="Cormorant Garamond" variant="h1">
+          <Typography
+            fontFamily="Cormorant Garamond"
+            variant="h1"
+            sx={{
+              "@media (max-width: 600px)": {
+                fontSize: "4rem",
+              },
+            }}
+          >
             GALLERY
           </Typography>
-          <Typography fontFamily="Cormorant Garamond" variant="h1">
+          <Typography
+            fontFamily="Cormorant Garamond"
+            variant="h1"
+            sx={{
+              "@media (max-width: 600px)": {
+                fontSize: "4rem",
+              },
+            }}
+          >
             COMING SOON
           </Typography>
         </Box>

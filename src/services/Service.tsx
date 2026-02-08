@@ -24,22 +24,12 @@ const Service = ({
       {!flipped ? (
         <>
           <Box
+            className="container-background"
             sx={{
-              width: "100%",
-              height: "100%",
               bgcolor: "#566327",
             }}
           />
-          <Box
-            sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "calc(100% - 16rem)",
-              height: "calc(100vh - 16rem)",
-              margin: "8rem",
-            }}
-          >
+          <Box className="content-box">
             <Grid container size={{ xs: 12 }} sx={{ height: "100%" }}>
               <Grid size={{ xs: 7 }}>
                 <Stack sx={{ height: "100%" }}>
@@ -67,7 +57,7 @@ const Service = ({
                       height="100%"
                       display="flex"
                       flexDirection="column"
-                      justifyContent="space-between"
+                      justifyContent="space-evenly"
                     >
                       <Typography
                         fontFamily="Questrial"
@@ -120,22 +110,12 @@ const Service = ({
       ) : (
         <>
           <Box
+            className="container-background"
             sx={{
-              width: "100%",
-              height: "100vh",
               bgcolor: "#dae59f",
             }}
           />
-          <Box
-            sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "calc(100% - 16rem)",
-              height: "calc(100vh - 16rem)",
-              margin: "8rem",
-            }}
-          >
+          <Box className="content-box">
             <Grid container size={{ xs: 12 }} sx={{ height: "100%" }}>
               <Grid size={{ xs: 5 }}>
                 <Box
@@ -172,7 +152,7 @@ const Service = ({
                       height="100%"
                       display="flex"
                       flexDirection="column"
-                      justifyContent="space-between"
+                      justifyContent="space-evenly"
                     >
                       <Typography
                         fontFamily="Questrial"

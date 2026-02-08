@@ -9,11 +9,8 @@ const Services = () => {
   return (
     <Box
       id="services"
+      className="container"
       sx={{
-        position: "relative",
-        margin: 0,
-        padding: 0,
-        minWidth: "100%",
         height: "400vh",
       }}
     >

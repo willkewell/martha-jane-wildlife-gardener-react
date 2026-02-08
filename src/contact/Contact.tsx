@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -7,72 +7,54 @@ import contactImage from "../assets/contact.png";
 
 const Contact = () => {
   return (
-    <Box
-      id="contact"
-      sx={{
-        position: "relative",
-        margin: 0,
-        padding: 0,
-        minWidth: "100%",
-        height: "100vh",
-      }}
-    >
+    <Box id="contact" className="container">
       <Box
+        className="container-background"
         sx={{
-          width: "100%",
-          height: "100%",
           bgcolor: "black",
         }}
       >
         <Box
+          className="container-background-image"
           sx={{
             backgroundImage: `url(${contactImage})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            width: "100%",
-            height: "100%",
             opacity: "50%",
-            position: "absolute",
-            top: "0",
-            left: "0",
           }}
         />
       </Box>
-      <Box
-        sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "calc(100% - 16rem)",
-          height: "calc(100vh - 16rem)",
-          margin: "8rem",
-        }}
-      >
-        <Grid
-          container
-          size={{ xs: 12 }}
-          sx={{ height: "100%", textAlign: "left", color: "white" }}
+      <Box className="content-box">
+        <Box
+          sx={{
+            width: "100%",
+            height: "100%",
+            textAlign: "left",
+            color: "white",
+          }}
         >
-          <Grid size={{ xs: 6 }} sx={{ height: "100%" }}>
-            <Stack>
-              <Typography
-                fontFamily="Cormorant Garamond"
-                fontWeight="400"
-                variant="h1"
-                marginBottom="2rem"
-              >
-                Get in touch
-              </Typography>
+          <Stack>
+            <Typography
+              fontFamily="Cormorant Garamond"
+              fontWeight="400"
+              variant="h1"
+              marginBottom="2rem"
+            >
+              Get in touch
+            </Typography>
+            <Stack sx={{ gap: "1rem" }}>
               <Box
                 display="flex"
                 flexDirection="row"
                 sx={{ width: "100%" }}
                 justifyContent="left"
                 alignItems="center"
-                marginBottom="1rem"
+                marginRight="2rem"
               >
-                <PhoneIcon sx={{ fontSize: "5rem" }} />
-                <Typography fontFamily="Questrial" variant="h4">
+                <PhoneIcon sx={{ fontSize: "clamp(3rem, 5cqw, 5rem)" }} />
+                <Typography
+                  fontFamily="Questrial"
+                  variant="h4"
+                  fontSize="clamp(1rem, 4cqw, 2rem)"
+                >
                   07437 924512
                 </Typography>
               </Box>
@@ -82,10 +64,13 @@ const Contact = () => {
                 sx={{ width: "100%" }}
                 justifyContent="left"
                 alignItems="center"
-                marginBottom="1rem"
               >
-                <EmailIcon sx={{ fontSize: "5rem" }} />
-                <Typography fontFamily="Questrial" variant="h4">
+                <EmailIcon sx={{ fontSize: "clamp(3rem, 5cqw, 5rem)" }} />
+                <Typography
+                  fontFamily="Questrial"
+                  variant="h4"
+                  fontSize="clamp(1rem, 4cqw, 2rem)"
+                >
                   info@marthajanewildlifegardener
                 </Typography>
               </Box>
@@ -95,10 +80,13 @@ const Contact = () => {
                 sx={{ width: "100%" }}
                 justifyContent="left"
                 alignItems="center"
-                marginBottom="1rem"
               >
-                <InstagramIcon sx={{ fontSize: "5rem" }} />
-                <Typography fontFamily="Questrial" variant="h4">
+                <InstagramIcon sx={{ fontSize: "clamp(3rem, 5cqw, 5rem)" }} />
+                <Typography
+                  fontFamily="Questrial"
+                  variant="h4"
+                  fontSize="clamp(1rem, 4cqw, 2rem)"
+                >
                   @marthajanewildlifegardener
                 </Typography>
               </Box>
@@ -108,16 +96,19 @@ const Contact = () => {
                 sx={{ width: "100%" }}
                 justifyContent="left"
                 alignItems="center"
-                marginBottom="1rem"
               >
-                <FacebookIcon sx={{ fontSize: "5rem" }} />
-                <Typography fontFamily="Questrial" variant="h4">
+                <FacebookIcon sx={{ fontSize: "clamp(3rem, 5cqw, 5rem)" }} />
+                <Typography
+                  fontFamily="Questrial"
+                  variant="h4"
+                  fontSize="clamp(1rem, 4cqw, 2rem)"
+                >
                   Martha Jane Wildlife Gardener
                 </Typography>
               </Box>
             </Stack>
-          </Grid>
-        </Grid>
+          </Stack>
+        </Box>
       </Box>
     </Box>
   );

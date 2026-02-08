@@ -1,32 +1,18 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import "./feedback.css";
 
 const Feedback = () => {
   return (
-    <Box
-      id="feedback"
-      sx={{
-        position: "relative",
-        margin: 0,
-        padding: 0,
-        minWidth: "100%",
-        height: "100vh",
-      }}
-    >
+    <Box id="feedback" className="container">
       <Box
+        className="container-background"
         sx={{
-          width: "100%",
-          height: "100%",
           bgcolor: "#f1ebe6",
         }}
       />
       <Box
+        className="content-box"
         sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "calc(100% - 16rem)",
-          height: "calc(100vh - 16rem)",
-          margin: "8rem",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -37,23 +23,28 @@ const Feedback = () => {
         <Stack>
           <Typography
             variant="h2"
-            fontSize="6cqw"
+            fontSize="clamp(3rem, 6cqw, 8rem)"
             sx={{ marginBottom: "2rem" }}
             fontFamily="Cormorant Garamond"
             fontWeight={400}
           >
             Client feedback
           </Typography>
-          <Grid
-            container
-            size={{ xs: 12 }}
-            columnSpacing={4}
-            sx={{ width: "100%", height: "45vh" }}
+          <Box
+            sx={{
+              width: "100%",
+              height: "45vh",
+              display: "flex",
+              flexDirection: "row",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
-            <Grid
-              size={{ xs: 4 }}
+            <Box
+              className="placeholder-feedback"
               sx={{
-                height: "100%",
+                height: "300px",
+                width: "300px",
                 backgroundColor: "white",
                 display: "flex",
                 flexDirection: "column",
@@ -69,16 +60,20 @@ const Feedback = () => {
               >
                 ...
               </Typography>
-            </Grid>
-            <Grid
-              size={{ xs: 4 }}
+            </Box>
+            <Box
               sx={{
-                height: "100%",
+                height: "300px",
+                width: "300px",
                 backgroundColor: "white",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 padding: "2rem",
+                "@media (max-width: 600px)": {
+                  width: "200px",
+                  height: "200px",
+                },
               }}
             >
               <Typography
@@ -86,19 +81,34 @@ const Feedback = () => {
                 fontFamily="Questrial"
                 fontWeight="500"
                 marginBottom="2rem"
+                sx={{
+                  "@media (max-width: 600px)": {
+                    fontSize: "1.1rem",
+                  },
+                }}
               >
                 Hi Martha - just wanted to say thank you for today. After you
                 left I kept looking and was so pleased with that you've done,
                 you've given me my garden back! Thanks for that!
               </Typography>
-              <Typography variant="h6" fontFamily="Questrial" fontWeight="500">
+              <Typography
+                variant="h6"
+                fontFamily="Questrial"
+                fontWeight="500"
+                sx={{
+                  "@media (max-width: 600px)": {
+                    fontSize: "1.2rem",
+                  },
+                }}
+              >
                 ~ Marie
               </Typography>
-            </Grid>
-            <Grid
-              size={{ xs: 4 }}
+            </Box>
+            <Box
+              className="placeholder-feedback"
               sx={{
-                height: "100%",
+                height: "300px",
+                width: "300px",
                 backgroundColor: "white",
                 display: "flex",
                 flexDirection: "column",
@@ -114,8 +124,8 @@ const Feedback = () => {
               >
                 ...
               </Typography>
-            </Grid>
-          </Grid>
+            </Box>
+          </Box>
         </Stack>
       </Box>
     </Box>
