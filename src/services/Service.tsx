@@ -96,9 +96,11 @@ const Service = ({
                           "@media (max-width: 1300px)": {
                             marginRight: "12rem",
                             marginBottom: "2rem",
+                            fontSize: "2rem",
                           },
                           "@media (max-width: 600px)": {
                             marginBottom: "0",
+                            fontSize: "1.3rem",
                           },
                         }}
                       >
@@ -163,7 +165,7 @@ const Service = ({
                   },
                   "@media (max-width: 600px)": {
                     height: "10rem",
-                    top: "-3rem",
+                    top: intro ? "-1rem" : "-3rem",
                     right: "-1rem",
                   },
                 }}
@@ -212,7 +214,7 @@ const Service = ({
                   },
                   "@media (max-width: 600px)": {
                     height: "10rem",
-                    top: "-3rem",
+                    top: intro ? "-1rem" : "-3rem",
                     right: "-1rem",
                   },
                 }}
@@ -272,9 +274,11 @@ const Service = ({
                           "@media (max-width: 1300px)": {
                             marginRight: "12rem",
                             marginBottom: "2rem",
+                            fontSize: "2rem",
                           },
                           "@media (max-width: 600px)": {
                             marginBottom: "0",
+                            fontSize: "1.3rem",
                           },
                         }}
                       >
