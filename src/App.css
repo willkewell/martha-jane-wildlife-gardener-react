@@ -53,6 +53,9 @@ nav {
   margin: 0 6rem 3rem 6rem;
   bottom: 0;
   z-index: 1030; /* to prevent the navbar getting covered up by other content */
+
+  /*REMOVE TEMPORARILY*/
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
