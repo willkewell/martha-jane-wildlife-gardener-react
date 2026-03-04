@@ -69,9 +69,9 @@ const About = () => {
                   marginRight: "2rem",
                   // marginBottom: "4rem",
                   "@media (max-width: 600px)": {
-                    maxWidth: "250px",
+                    maxWidth: "200px",
                     minWidth: "150px",
-                    marginBottom: "2rem",
+                    marginBottom: "0.5rem",
                     marginRight: 0,
                   },
                 }}
@@ -89,7 +89,14 @@ const About = () => {
             <Stack
               display="flex"
               justifyContent="center"
-              sx={{ height: "100%", maxWidth: "1100px" }}
+              sx={{
+                height: "100%",
+                maxWidth: "1100px",
+                "@media (max-width: 600px)": {
+                  justifyContent: "start",
+                  gap: 0,
+                },
+              }}
             >
               <Typography
                 fontFamily="Questrial"
@@ -102,6 +109,7 @@ const About = () => {
                   "@media (max-width: 600px)": {
                     fontSize: "0.8rem",
                     textAlign: "center",
+                    marginBottom: 0,
                   },
                 }}
               >
@@ -124,6 +132,7 @@ const About = () => {
                   "@media (max-width: 600px)": {
                     fontSize: "0.8rem",
                     textAlign: "center",
+                    marginBottom: "1rem",
                   },
                 }}
               >

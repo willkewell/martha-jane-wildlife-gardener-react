@@ -10,6 +10,12 @@ const ServiceBullets = ({ bullets }: { bullets: string[] }) => {
               sx={{
                 marginBottom: "1rem",
                 fontSize: "1.3cqw",
+                "@media (max-width: 1300px)": {
+                  fontSize: "0.85rem",
+                },
+                "@media (max-width: 600px)": {
+                  fontSize: "0.7rem",
+                },
               }}
             >
               {bullet}

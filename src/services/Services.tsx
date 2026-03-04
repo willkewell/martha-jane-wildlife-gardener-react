@@ -23,8 +23,8 @@ const Services = () => {
           "Whether you’re looking for regular maintenance or a one off job, I offer skilled garden maintenance around the Bristol area with organic principles and wildlife in mind. This can be for anything from a traditional garden to meadow maintenance and vegetable beds. I always like to come out and see your garden and chat about your wants and needs beforehand so please do get in touch to arrange a free consultation."
         }
         price={[
-          "Full day - £170",
-          "Half Day - £85",
+          "Full day - £160",
+          "Half Day - £80",
           "For small jobs please get in touch for a quote",
         ]}
       />
@@ -53,7 +53,7 @@ const Services = () => {
           "•	Bed/border creation and planting",
           "•	Free-draining and woodchip paths",
         ]}
-        price={["Priced per project from £85"]}
+        price={["Priced per project from £80"]}
       />
       <Service
         flipped={true}
@@ -62,7 +62,7 @@ const Services = () => {
         text={
           "If you're looking for some inspiration but don't want to commit to a full planting plan or just want some pointers on how to manage your garden I offer a garden consultation service. This begins with a 1-2 hour consultation where I will come and visit you in your garden to talk about your wants and ideas, problem areas and tips on managing your space to help reach its full potential. I will then follow this up with a summary of the points mentioned during the consultation and steps moving forward. I always aim for this to inspire you to take on your garden yourself but equally this consultation can be developed into a planting plan or maintenance services from myself if you desire."
         }
-        price={["1-2 hour consultation - £90"]}
+        price={["1-2 hour consultation - £80"]}
       />
     </Box>
   );
