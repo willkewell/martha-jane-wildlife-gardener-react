@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import "./Service.css";
 import ServiceBullets from "./ServiceBullets";
 
